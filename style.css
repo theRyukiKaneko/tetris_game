@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url("font/webfont.otf") format("opentype");
+	src: local('myfont Regular'), /* フォントがローカルにインストールされている場合に有効 */
+	     url('font/webfont.ttf')  format('truetype'), /* ttf - Safari, Android, iOS */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000;
+  text-align: center;
+  height: 100%;
+  font-family: MyFont; /* @font-faceで定義したフォント名を指定 */
+  color:#fff;
+}
+.enjoy-css {
+  margin:20px auto;
+  font-size:50px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px;
+  overflow: hidden;
+  border: none;
+  font-family: MyFont; /* @font-faceで定義したフォント名を指定 */
+  /*font: normal 70px/1 "VT323", Helvetica, sans-serif;*/
+  color: rgba(255,255,0,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 2px 5px 0 rgba(255,0,0,1) ;
+}
+#content {
+  width:50%;
+  margin:20px auto;
+}
+table {
+  border-spacing: 1px;
+  float:left;
+}
+th {
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+}
+th.wall {
+  background: transparent;
+}
+.cls1 { background: #00BFFF; }  /*sky*/
+.cls2 { background: #8000ff; }  /*purple*/
+.cls3 { background: #FF0000; }  /*red*/
+.cls4 { background: #01DF01; }  /*green*/
+.cls5 { background: #FFFF00; }  /*yellow*/
+.cls6 { background: #0000FF; }  /*blue*/
+.cls7 { background: #FF8000; }  /*orange*/
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  font-size: 30pt;
+  letter-spacing: 0.5em;
+  color: white;
+}
+.overlay:before {
+  display: inline-block;
+  content: '';
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.texts {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#cont {
+  width:300px;
+  height:200px;
+  border:solid 3px #fff;
+  border-radius:10px;
+  float:right;
+  line-height:2;
+  letter-spacing: 0.5em;
+}
